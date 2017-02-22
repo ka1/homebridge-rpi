@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+    homebridge:
+        image: kaii/homebridge-rpi
+        ports:
+            - 0.0.0.0:51826:51826
+        volumes:
+            - ./data:/root/.homebridge
+        network_mode: host

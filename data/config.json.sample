@@ -1,0 +1,37 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:31",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+
+    "description": "Kais Homebridge Configuration",
+
+    "accessories": [
+    {
+        "accessory": "TADO",
+        "name": "Tado",
+        "homeID": "4837",
+        "username": "PunyWish",
+        "password": "BpQxD4Ro"
+    }
+    ],
+
+    "platforms": [{
+        "platform": "Hue",
+        "name": "Hue",
+        "users": {
+            "001788FFFE170AF0": "hYKxptdZHvsQGSjNju9aygnRWLYHc1OSoYm8Tx3R"
+        },
+        "lights": true,
+        "philipslights": true
+    }, {
+        "platform": "mqtt",
+        "name": "mqtt",
+        "url": "tcp://192.168.4.222:1883",
+        "topic_prefix": "homebridge",
+        "username": "",
+        "password": ""
+    }]
+}
